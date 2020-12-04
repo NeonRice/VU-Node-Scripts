@@ -16,7 +16,7 @@ class Transaction:
         self.fee = self.vinValue - self.voutValue
     
     def getInTxValues(self):
-        inputValue = 0
+        inputValue = 0 
         print(self.vin)
         for inputTx in self.vin:
             inputTxID = inputTx['txid']
